@@ -1,0 +1,881 @@
+
+body{
+    font-size: 0.2rem;
+}
+
+/*中间内容部分*/
+
+.warn{
+    font-weight: normal !important;
+}
+.mainContent{
+    width:10.4rem;
+    margin:0 auto;
+}
+
+.details{
+    margin-top:0.4rem;
+}
+.hotelName{
+    letter-spacing: 0.2px;
+    font-size:0.26rem;
+}
+
+.checkDetailBtn{
+    margin-left: 0.2rem;
+}
+.features{
+    margin-top:0.2rem;
+    margin-bottom:0.4rem;
+}
+.features .commoditySubTitle{
+    font-size: 0.22rem;
+}
+.roomAddress{
+    margin-bottom:0.4rem;
+}
+
+.roomAddress a{
+    display: inline-block;
+}
+
+.roomAddress .addressDetail{
+    margin-left: 0.18rem;
+}
+.roomAddress .checkMap{
+    margin-left: 0.3rem;
+}
+
+
+
+.newCustomer{
+    width: 100%;
+    height: 0.70rem;
+    border-radius: 1px;
+    background-color: #fff6cd;
+    margin-bottom:0.4rem;
+    background:url("../image/detail/img_gift.png") 0 0 no-repeat ;
+    background-size:cover;
+    text-align: center;
+}
+.newCustomer span{
+    float: left;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    margin-top:0.18rem;
+    letter-spacing: 0.1px;
+    color: #f17c67;
+    font-size: 0.20rem;
+}
+.newCustomer .giftIcon{
+    width:0.36rem;
+    width:0.36rem;
+    background:url("../image/detail/img_gift_icon.png") 0 0 no-repeat;
+    background-size:contain;
+    margin-left:2.3rem;
+    margin-right:0.2rem;
+    margin-top:0.16rem;
+}
+.description{
+    margin-bottom:1.2rem;
+}
+.description>div{
+    padding-top:0.3rem;
+    border-top:solid 1px #a1a7aa;
+}
+.description .roomTitle{
+    width:3.1rem;
+    font-size: 0.22rem;
+    font-weight: 300;
+}
+.description .roomTitle p{
+    margin-left:0.08rem;
+}
+.description .content{
+    width:7.05rem;
+    line-height: 0.36rem;
+    font-weight: 300;
+    font-size: 0.16rem;
+    letter-spacing: 0.3px;
+}
+
+
+/*房型列表 优惠套餐 入住时间 退房时间 搜索*/
+.choseWrap{
+    margin-bottom:0.54rem;
+}
+.roomLists,
+.discountPackage{
+    width:1.55rem;
+    height:0.48rem;
+    line-height: 0.48rem;
+    color: #82aaff;
+    font-size: 0.22rem;
+    font-weight: 300;
+    background-color: #f5f6f7;
+    border: solid 1px #82aaff;
+    text-align: center;
+    cursor: pointer;
+}
+.actived{
+    color:#fff !important;
+    background-color: #82aaff !important;
+}
+
+.checkStates {
+    width:7.02rem;
+    height:0.48rem;
+    border: solid 1px #ccd1d4;
+}
+.timePickWrap{
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    width: 4.00rem;
+    height: 0.48rem;
+    background-color: #ffffff;
+}
+.timePickers{
+    left: 0.0rem;
+    top:0.7rem;
+}
+
+.checkIn label,
+.checkOut label{
+    color: #9b9b9b;
+    font-size: 0.16rem;
+    font-weight: 400;
+    line-height: 0.48rem;
+}
+.checkIn input,
+.checkOut input{
+    color: #3c3f40;
+    font-size: 0.16rem;
+    font-weight: 400;
+    width:1.1rem;
+    text-align: center;
+    height: 0.48rem;
+    margin:0;
+    padding: 0;
+}
+.searchBtn{
+    width: 1.80rem;
+    height: 0.48rem;
+    background-color: #f17c67;
+    color: #ffffff;
+    font-size: 0.20rem;
+}
+/*房型列表 优惠套餐 入住时间 退房时间 搜索*/
+
+/*点击优惠套餐显示内容样式*/
+.packageCon{
+   height:2.4rem;
+    margin-bottom:0.38rem;
+    font-size: 0.28rem;
+    letter-spacing: 0.2px;
+}
+.packageCon>div{
+    padding:0.2rem;
+}
+.packageCon>div:first-child{
+    padding-left:0rem; 
+    text-align: center;
+}
+.packageCon>div:first-child p{
+    height: 0.36rem;
+    line-height: 0.36rem;
+}
+.packageCon img{
+    width:2.20rem;
+    margin-bottom:0.2rem;
+}
+.packageMain.active{
+    box-shadow: 0 2px 6px 0 rgba(161, 167, 170, 0.42);
+}
+.equalIconWrap,
+.addIconWrap{
+    text-align: center;
+    width:0.6rem;
+    height: 100%;
+    background-size:auto;
+    padding:0 !important;
+}
+.addIcon,
+.equalIcon{
+    display: inline-block;
+    width:0.28rem;
+    height: 0.28rem;
+    background-size:contain;
+    vertical-align: middle; 
+    text-align: center;
+    margin-top: 0.92rem;
+}
+.equalIcon{
+    height: 0.23rem;
+    margin-top: 0.94rem;
+}
+.addIcon{
+    background:url("../image/detail/select_add.png")center center no-repeat;  
+}
+.equalIcon{
+    background:url("../image/detail/select_equal.png")center center no-repeat;
+}
+
+.checkbox{
+    position: relative;
+    height: 0.36rem;
+    line-height: 0.36rem;
+}
+.checkbox .checkIcon{
+    display:block;
+    height:0.24rem;
+    width:0.31rem;
+    background:url("../image/detail/selected.png") -0.40rem 0 no-repeat;
+    background-size:cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1111;
+    margin-top:0.08rem;
+}
+.checkbox.checked .checkIcon{
+    background:url("../image/detail/selected.png") 0rem 0 no-repeat;
+    background-size:cover;
+}
+.checkbox input{
+    margin-right:0.2rem;
+    opacity: 0;
+}
+
+.TotalPriceWrap{
+    text-align: center;
+}
+
+.TotalPrice{
+    margin-top:0.72rem;
+    margin-bottom:0.4rem;
+    font-size: 0.32rem;
+    font-weight: 500;
+    color: #f17c67;
+}
+
+
+.serviceDetail{
+    font-size: 0.24rem;
+    font-weight: 300;
+    letter-spacing: -0.7px;
+    border-bottom:solid 1px #a1a7aa;
+}
+.serviceDetail>p{
+   margin-bottom:0.16rem; 
+}
+
+.serviceCon>div{
+    padding:0.2rem 0;
+    border-bottom: solid 1px #a1a7aa;
+}
+.choseSerivece{
+    text-align: center;
+}
+.choseBtn,
+.chosedBtn{
+    width: 1.50rem;
+    height: 0.48rem;
+    font-size: 0.20rem;
+}
+.choseBtn{
+    background-color:#fff;
+    color:#f17c67;
+    border: solid 1px #e15c44 !important;
+    
+}
+.chosedBtn{
+    background-color: #f17c67 !important; 
+    color:#fff !important;
+    border: solid 1px #f17c67 !important;
+}
+
+.serveContent{
+    margin-left:0.3rem;
+}
+.serviceName{
+    font-size: 0.28rem;
+    letter-spacing: 0.2px;
+    margin-top:0.28rem;
+}
+.validity{
+    color: #a1a7aa;
+    margin-top:0.5rem;
+    margin-bottom:0.4rem;
+}
+.serviceImg img{
+    width:2.2rem;
+}
+
+.serviceCon{
+    position: relative;
+}
+.serviceCon[action=travelSteward]{
+    display: block;
+}
+.serviceCon[action=experience]{
+    display: none;
+}
+.serviceCon .triangleIcon{
+    position: absolute;
+    top: -0.15rem;
+    display:block !important;
+    width:0.26rem;
+    height: 0.16rem;
+    background:url("../image/detail/img_triangle.png") 0 0 no-repeat;
+    background-size:contain;
+}
+.serviceCon[action=travelSteward] .triangleIcon{
+    left:4.16rem;
+}
+.serviceCon[action=experience] .triangleIcon{
+    left:7.36rem;
+}
+/*点击优惠套餐显示内容样式*/
+
+
+/*点击房型列表显示的内容样式*/
+.listContent{
+    display: block;
+}
+.discountContent{
+    display: none;
+}
+.listTitle{
+    border-bottom:solid 1px #a1a7aa;
+    overflow: hidden;
+    margin-bottom:0.2rem;
+}
+.listConten{
+    border: solid 1px #dfe2e5;
+    margin-bottom:0.4rem;
+    
+    
+    background-color: #f5f6f7;
+}
+.listConten>li{
+    background:#fff;
+}
+.listConten>li:last-child{
+    background:transparent;
+}
+.listConten:hover{
+    box-shadow: 0 2px 6px 0 rgba(161, 167, 170, 0.42);
+    background-color: #fff6cd;
+}
+.listConten>li{
+    float: left;
+    height: 2.20rem;
+    overflow-y:hidden;
+}
+.listConten>li:last-child{
+    float: right;
+}
+.listTitle>li{
+    float: left;
+    margin-bottom:0.14rem;
+    color: #3c3f40;
+    font-size: 0.18rem;
+    font-weight: 300;
+}
+
+.roomInfo{
+    width:4.5rem;
+}
+.facilities{
+    width:2.86rem;
+}
+.counts{
+    width:1.00rem;
+    font-size: 0.16rem;
+}
+.charge{
+    float: right;
+    width:2.0rem;
+    text-align: right;
+}
+.chargeContainer .unitPrice .price{
+    font-size: 0.26rem;
+}
+
+
+.roomInfo img{
+    width:2.20rem;
+    height:2.20rem;
+}
+.describe{
+    margin-left:0.3rem;
+}
+.roomInfo .roomType{
+    font-size: 0.22rem;
+    letter-spacing: 0.2px;
+    margin-bottom:0.38rem;
+    margin-top:0.4rem;
+}
+.roomInfo .roomDetail{
+    color: #a1a7aa;
+    font-weight: 300;
+    font-size: 0.16rem;
+}
+.roomInfo .roomDetail p{
+    line-height: 0.3rem;
+}
+
+
+.facility{
+/*    margin-bottom:0.06rem;*/
+    margin-bottom:0.08rem;
+    height:0.18rem;
+    line-height: 0.18rem;
+    float: left;
+    width:1.4rem;
+}
+.facilities>div{
+/*    margin-top:0.26rem;*/
+    margin-top:0.24rem;
+}
+.facilities .leftBox{
+}
+
+.facilityIcon{
+    display: block;
+    width:0.18rem;
+    height:0.18rem;
+    background-size:contain;
+    margin-right:0.10rem;
+}
+
+
+
+/*24小时热水*/
+.facilityIcon13{
+    background:url("../image/detail/ICON/house_icon_hot.png") left center no-repeat;
+    background-size:contain;
+}
+/*盥洗用品*/
+.facilityIcon14{
+    background:url("../image/detail/ICON/house_icon_bash.png") left center no-repeat;
+    background-size:contain;
+}
+/*吹风机*/
+.facilityIcon12{
+    background:url("../image/detail/ICON/house_icon_blower.png") left center no-repeat;
+    background-size:contain;
+}
+/*拖鞋*/
+.facilityIcon15{
+    background:url("../image/detail/ICON/house_icon_slipper.png") left center no-repeat;
+    background-size:contain;
+}
+/*wifi*/
+.facilityIcon3{
+    background:url("../image/detail/ICON/house_icon_wlan.png") left center no-repeat;
+    background-size:contain;
+}
+/*暖气*/
+.facilityIcon5{
+    background:url("../image/detail/ICON/house_icon_heat.png") left center no-repeat;
+    background-size:contain;
+}
+/*毛巾*/
+.facilityIcon16{
+    background:url("../image/detail/ICON/house_icon_tawel.png") left center no-repeat;
+    background-size:contain;
+}
+/*洗衣机*/
+.facilityIcon10{
+    background:url("../image/detail/ICON/house_icon_washer.png") left center no-repeat;
+    background-size:contain;
+}
+/*浴缸*/
+.facilityIcon8{
+    background:url("../image/detail/ICON/house_icon_bathtub.png") left center no-repeat;
+    background-size:contain;
+}
+/*淋浴*/
+.facilityIcon7{
+    background:url("../image/detail/ICON/house_icon_shower.png") left center no-repeat;
+    background-size:contain;
+}
+/*热水壶*/
+.facilityIcon11{
+    background:url("../image/detail/ICON/house_icon_kettle.png") left center no-repeat;
+    background-size:contain;
+}
+/*电冰箱*/
+.facilityIcon9{
+    background:url("../image/detail/ICON/house_icon_icebox.png") left center no-repeat;
+    background-size:contain;
+}
+
+/*电梯*/
+.facilityIcon17{
+    background:url("../image/detail/ICON/house_icon_elevator.png") left center no-repeat;
+    background-size:contain;
+    
+}
+/*电视*/
+.facilityIcon6{
+    background:url("../image/detail/ICON/house_icon_tv.png") left center no-repeat;
+    background-size:contain;
+    
+}
+/*禁止吸烟*/
+.facilityIcon1{
+    background:url("../image/detail/ICON/house_icon_smoke.png") left center no-repeat;
+    background-size:contain;
+}
+/*空调*/
+.facilityIcon4{
+    background:url("../image/detail/ICON/house_icon_air.png") left center no-repeat;
+    background-size:contain;
+}
+
+
+.IconCont{
+    display: block;
+    font-size: 0.16rem;
+    font-weight: 300;
+    color:#a1a7aa;
+}
+
+
+
+.chargeContainer{
+    width:100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.roomContent .unitPrice{
+    margin-top:0.58rem;
+    margin-bottom:0.38rem;
+}
+.bookBtn,
+.noRoomBtn{
+    line-height: 0.4rem;
+    width: 1.50rem;
+    height: 0.40rem;
+    background-color: #f17c67;
+    color:#fff;
+    font-size:0.18rem;
+    font-weight: 400;
+}
+.noRoomBtn{
+    background-color: #a1a7aa;
+}
+/*点击房型列表显示的内容样式*/
+
+
+/*住宿位置 退款政策 预定须知*/
+.positionWrap{
+    padding-top:1.2rem;
+}
+.container .leftPanel{
+    width:3.1rem;
+    border-top: solid 1px #a1a7aa;
+    padding-top:0.24rem;
+    font-size: 0.22rem;
+    font-weight: 300;
+    letter-spacing: -0.7px;
+}
+.container .rightPanel{
+    width:7.05rem;
+    border-top: solid 1px #a1a7aa;
+}
+.position{
+    margin-bottom:0.8rem;
+}
+.position .rightPanel{
+    padding-top:0.4rem;
+}
+
+.position .rightPanel iframe{
+    width:7.00rem;
+    height:4.31rem;
+    margin-left: 0.05rem;
+}
+
+.refundPolicy .rightPanel{
+    padding-top:1.2rem;
+}
+/*住宿位置 退款政策 预定须知*/
+.refundPolicy{
+    margin-bottom:0.88rem;
+}
+.aboutRefund,
+.refundRate{
+    width:6.6rem;
+}
+.aboutRefund{
+    font-size:0.17rem;
+    font-weight: 300;
+    height:0.25rem;
+    line-height: 0.25rem;
+    margin-bottom:0.34rem;
+    margin-left:0.26rem;
+}
+.aboutRefund input[type=button]{
+    width: 0.9rem;
+    line-height: 0.22rem;
+    border-radius: 12.5px;
+    background:#fff;
+    margin-right:0.2rem;
+}
+.Twentydays input[type=button]{
+    border: solid 1px #ffb189;
+    color:#ffb189;
+}
+.Tendays input[type=button]{
+    border: solid 1px #ff5c57;
+    color:#ff5c57;
+}
+.Twentydays{
+    margin-left:1.08rem;
+}
+.Tendays{
+    margin-left:0.56rem;
+}
+.refundRate{
+    margin-left:0.26rem;
+    
+}
+.refundRate img{
+    display: block;
+    width:6.60rem;
+    height: 0.21rem;
+}
+.refundRate span{
+    display: block;
+    text-align: right;
+    margin-top:0.24rem;
+    font-size: 0.20rem;
+    color: #ff5c57;
+}
+
+
+.reservationNote{
+    margin-bottom:1.24rem;
+}
+.reservationNote .rightPanel{
+    padding-top:0.2rem;
+    font-size: 0.16rem;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+.reservationNote .rightPanel p{
+    line-height: 0.35rem;
+}
+
+
+
+/*相似民宿*/
+.similarTitle{
+    font-size: 0.22rem;
+    margin-bottom:0.2rem;
+}
+.similar img{
+    width:3.04rem;
+    height:2.08rem;
+}
+.similar ul li{
+    float: left;
+    margin-right: 0.34rem;
+    width:3.24rem;
+    height:4.08rem;
+    margin-bottom:0.3rem; 
+    cursor: default;
+}
+.similar ul li>a{
+    display: block;
+    padding: 0.1rem;
+}
+.similar ul li:nth-child(3n){
+    margin-right: 0;
+}
+.similar{
+    margin-bottom:1.1rem;
+}
+.similar .currentPrice{
+    color: #f17c67;
+}
+
+.similar .price{
+    background-color: #f5f6f7;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    margin-top:0.08rem;
+}
+
+.similar .price .originalPrice{
+    color: #f17c67;
+    text-decoration: line-through;
+    font-size: 0.2rem;
+    margin-left:0.18rem;
+}
+.similar .roomName{
+    margin-top:0.14rem;
+    margin-bottom:0.14rem;
+    line-height: 0.32rem;
+}
+.similar .roomDetail{
+    margin-bottom:0.26rem;
+}
+.similar .price,
+.similar .roomDetail,
+.similar .roomName{
+    padding-left:0.2rem;
+}
+.similar li:hover{
+    box-shadow: 0 2px 6px 0 rgba(161, 167, 170, 0.42);  
+}
+.similar li:hover .price{
+    background-color: #fffad5;
+}
+
+.similar .commoditySubTitle{
+    width:2.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.similar .commodityTitle{
+    font-size:0.18rem;
+    font-weight: 400;
+}
+/*相似民宿*/
+
+
+
+
+
+/*中间内容部分*/
+
+
+/*轮播图部分*/
+.silder{
+    width:100%;
+    margin-bottom:0.6rem;
+}
+
+.sliderWrapper{
+    width:9rem;
+    height: 5.4rem;
+    overflow: hidden;
+    margin-right:0.18rem;
+}
+.sliderWrapper ul{
+}
+.sliderWrapper ul li{
+    float: left;
+    display: none;
+}
+.sliderWrapper ul li:first-child{
+    display: block;
+}
+.sliderWrapper ul li img{
+    width:9rem;
+    height: 5.4rem;
+}
+
+
+.thumbnailWrapper{
+    height: 5.4rem;
+    cursor:pointer;
+}
+
+.thumbnailWrapper .ulWrapper{
+    height:4rem;
+    overflow: hidden;
+}
+.thumbnailWrapper ul{
+    height:5640rem;
+    position:relative;
+}
+.thumbnailWrapper ul li{
+    width:1.2rem;
+    height: 0.8rem;
+    padding:0.1rem 0;
+    position: relative;
+}
+
+.thumbnailWrapper ul li img{
+    width:1.2rem;
+    height: 0.8rem;
+}
+
+.prveStep,
+.nextStep{
+    text-align: center;
+    height: 0.58rem;
+    width:1.18rem;
+    background-color: #f5f6f7;
+    border: solid 1px #dfe2e5;
+    
+    
+}
+.prveStep{
+    margin-bottom:0.1rem; 
+}
+.nextStep{
+    margin-top:0.1rem;
+}
+.prveStep img,
+.nextStep img{
+    display: inline-block;
+    height: 0.14rem;
+    margin-top:0.22rem;
+}
+
+.maskWrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 111;
+    display: none;
+}
+.mask{
+    width:1.2rem;
+    height: 0.8rem;
+    position: absolute;
+    left: 0;
+    top:0.1rem;
+    opacity: 0.5;
+    background-color: #000000;
+    z-index: 222;
+}
+.maskCon{
+    width:1.2rem;
+    height: 0.8rem;
+    position: absolute;
+    left: 0;
+    top:0.1rem;
+    color:#fff;
+    text-align:center;
+/*    line-height:0.8rem;*/
+    line-height:0.84rem;
+    z-index: 333;
+    font-size: 0.22rem;
+    font-weight: 400;
+    
+}
+.thumbnailWrapper li.active .maskWrap{
+    display: block;
+}
+/*轮播图部分*/
+
+
+
+
+
+
+
+
+
+
+

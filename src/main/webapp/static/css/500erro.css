@@ -1,0 +1,46 @@
+
+/*中间内容部分*/
+.main{
+    width:11.8rem;
+    margin:0 auto;
+    text-align: center;
+}
+.errorImg {
+    margin-top:2.7rem;
+    margin-bottom:0.1rem;
+}
+.errorImg img{
+    width:1.34rem;
+}
+.errorTips{
+    font-size: 0.24rem;
+    letter-spacing: 0.6px;
+    color: #b6b5b5;
+    margin-bottom:0.8rem;
+}
+.defaultBtn{
+    border: solid 1px #82aaff;
+    background:#fff;
+    font-weight: 300;
+    width:2.26rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+}
+.lineBottom{
+    margin-top:1.84rem;
+    margin-bottom:1rem;
+    border-top: solid 1px #c3c8cb;
+}
+/*中间内容部分*/
+
+
+
+
+
+
+
+
+
+
+
+

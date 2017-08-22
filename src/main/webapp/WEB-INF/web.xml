@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <display-name>yezi</display-name>
+
+    <!-- 配置spring核心监听器，默认会以 /WEB-INF/applicationContext.xml作为配置文件 -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <!-- contextConfigLocation参数用来指定Spring的配置文件 -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:applicationContext.xml</param-value>
+    </context-param>
+
+    <filter>
+        <filter-name>AuthorizationFilter</filter-name>
+        <filter-class>cq.yezi.filter.AuthorizationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthorizationFilter</filter-name>
+        <url-pattern>/user/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>AuthorizationFilter</filter-name>
+        <url-pattern>/order/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>LoginInfo</filter-name>
+        <filter-class>cq.yezi.filter.LoginInfo</filter-class>
+        <init-param>
+            <param-name>exclude</param-name>
+            <param-value>/static</param-value><!-- 匹配不做拦截的请求声明-->
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginInfo</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>SetCharacterEncoding</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>SetCharacterEncoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>yezi</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springmvc-config.xml</param-value>
+        </init-param>
+        <!-- 在web应用启动时立即加载servlet -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <!-- 让spring mvc 的前端控制器(DispatcherServlet)拦截所有请求 -->
+    <servlet-mapping>
+        <servlet-name>yezi</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <!-- 让以下后缀的文件可以不走mvc的路由 -->
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/error*</url-pattern>
+    </servlet-mapping>
+
+    <!--错误页-->
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error500.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>400</error-code>
+        <location>/error404.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error404.jsp</location>
+    </error-page>
+</web-app>

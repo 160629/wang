@@ -1,0 +1,149 @@
+
+
+/*中间内容部分*/
+
+.mainContent{
+    width:100%;
+}
+
+/*左侧菜单部分开始*/
+.leftPanel{
+    width:31%;
+}
+.leftContent{
+    float: right;
+    width:2.4rem;
+    margin-right:-0.04rem;
+}
+
+.leftPanel .current a{
+    color: #3c3f40;
+    font-size: 0.22rem;
+    font-weight: 500;
+    color: #3c3f40;
+    border-bottom:solid 1px #3c3f40;
+}
+.leftPanel h3 a{
+    display: block;
+    cursor: pointer;
+    line-height: 0.64rem;
+    margin-top:0.3rem;
+    cursor: pointer;
+    font-size: 0.22rem;
+    font-weight: 300;
+    color: #a3a9ac;
+    border-bottom: solid 1px #ccd1d4;
+}
+
+/*左侧菜单部分结束*/
+
+
+/*右侧内容部分*/
+.commodityTitle{
+    font-size: 0.20rem;
+}
+.rightPanel{
+    width:68.8%;
+    border: solid 1px #dfe3e6;
+    border-right:none;
+    background:#fff;
+}
+.orderListWrap{
+    width:7.4rem;
+    margin-left:0.5rem;
+    margin-top:0.5rem;
+    margin-bottom:2rem;
+}
+.orderListWrap>div{
+    margin-bottom:0.4rem;
+}
+
+.orderNum{
+    background-color: #f5f6f7;
+    height: 0.60rem;
+    font-size: 0.16rem;
+    line-height: 0.6rem;
+    padding-left: 0.4rem;
+    padding-right: 0.3rem;
+    margin-bottom:0.1rem;
+}
+.orderLists:hover .orderNum{
+    background-color: #fff6cd;
+}
+
+.orderDetail{
+    background-color: #f5f6f7;
+    padding-top:0.2rem;
+    padding-bottom:0.2rem;
+    padding-left:0.4rem;
+}
+.orderName{
+    width:2.2rem;
+}
+.orderName>h2{
+    line-height: 0.36rem;
+    margin-bottom:0.2rem;
+}
+.orderName img{
+    width:2.2rem;
+    height:1.4rem;
+}
+.orderTime{
+    width:2.8rem;
+    text-align: center;
+    font-size: 0.18rem;
+}
+.orderTime .checkin,
+.orderTime .checkout{
+    line-height: 0.36rem;
+}
+.orderTime .checkout{
+    margin-bottom:0.20rem;
+}
+.orderTime .checkTime{
+    color: #a1a7aa;
+    margin-bottom:0.24rem;
+}
+.orderTime .orderBtn{
+    border: solid 1px #a1a7aa;
+    color: #a1a7aa;
+    background-color:#F5F6F7;
+}
+.orderPrice{
+    width:2.0rem;
+    text-align: center;
+    float: right;
+    margin-top:0.38rem;
+}
+.orderPrice .unitPrice{
+    font-size: 0.22rem;
+    line-height: 0.28rem;
+    font-weight: 500;
+    color: #f17c67;
+    margin-bottom:0.26rem;
+}
+.orderPrice .pending,
+.orderPrice .paid{
+    margin-bottom:0.26rem;
+}
+.orderPrice>div{
+    margin-bottom: 0.2rem;
+}
+
+/*右侧内容部分结束*/
+/*中间内容部分*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

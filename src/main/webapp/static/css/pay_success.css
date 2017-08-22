@@ -1,0 +1,181 @@
+
+/*中间内容部分*/
+
+
+
+.mainContent{
+    width:8.4rem;
+    margin:0 auto;
+    font-size: 0.2rem;
+}
+
+/*支付成功提示开始*/
+.payStatus{
+    text-align: center;
+    margin-top:0.6rem;
+}
+.payStatus .successImg img{
+    width:0.8rem;
+}
+.payStatus .currentStatus{
+    margin-top:0.4rem;
+    margin-bottom:0.4rem;
+    font-size:0.28rem;
+    font-weight: 500;
+}
+
+.payStatus .notice{
+    font-size: 0.24rem;
+    margin-bottom:0.4rem;
+}
+/*支付成功提示结束*/
+
+
+/*预定明细开始*/
+/*预定明细下的公共部分*/
+.schedule{
+    padding-bottom:0.1rem;
+}
+.schedule>.schedulTtitle{
+    line-height: 0.7rem;
+    font-size:0.22rem;
+    font-weight: 300;
+}
+.schedule>div{
+    padding:0.4rem;
+    padding-top:0.32rem;
+    background-color: #f5f6f7;
+    margin-bottom:0.1rem;
+}
+
+/*酒店预订信息*/
+.hotelInfo>.commodityTitle{
+    margin-bottom:0.24rem;
+}
+.hotelInfo .hotelImg{
+/*    width:1.8rem;*/
+    margin-right:0.4rem;
+}
+.hotelInfo img{
+/*    width:100%;*/
+    width:1.8rem;
+    height: 1.2rem;
+}
+.hotelInfo .hotelDetail{
+    font-size: 0.2rem;
+    color: #a1a7aa;
+}
+.hotelDetail>div{
+    height: 0.4rem;
+    line-height: 0.4rem;
+}
+.hotelTime>div:first-child,
+.roomInfo>div:first-child{
+    width:2.4rem;
+}
+.hotelInfo .hotelDetail .detailTitle{
+    color: #3c3f40;
+}
+.roomNum{
+    margin-left: 0.5rem;
+}
+.totalTime{
+    margin-left:0.38rem;
+}
+
+.roomAddress{
+    font-size:0.2rem;
+}
+/*<!--酒店预订信息结束-->*/
+
+
+/*入住信息  订单信息*/
+.checkinInfo .titleInfo,
+.orderInfo .titleInfo{
+    font-size: 0.22rem;
+}
+.checkinInfo .titleInfo{
+    margin-bottom:0.3rem;
+}
+.orderInfo .titleInfo{
+    margin-bottom:0.4rem;
+}
+.checkinInfo .detailInfo{
+    margin-bottom:0.2rem;
+}
+.orderInfo .detailInfo{
+    margin-bottom:0.3rem;
+}
+.detailInfo>span{
+    display: inline-block;
+}
+.detailInfo>span:first-child{
+    width:2.2rem;
+    font-weight: 300;
+}
+.detailInfo>span:nth-child(2n){
+    font-weight: 500;
+}
+.defaultBtn{
+    width: 1.50rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-radius: 2px;
+    border: solid 1px #82aaff;
+    font-size: 0.2rem;
+    color: #82aaff;
+    background:#F5F6F7;
+}
+.passengerName{
+    color: #a1a7aa;
+}
+/*入住信息  订单信息*/
+/*预定明细结束*/
+
+
+/*赚取旅行基金*/
+.travalFund{
+    text-align: center;
+    margin-top:0.8rem;
+    margin-bottom:1.2rem;
+}
+.travalFund>h2{
+    font-size: 0.28rem;
+    font-weight:500;
+    color: #5b76cd;
+    margin-bottom:0.24rem;
+}
+.travalFund .share{
+    line-height: 0.44rem;
+    font-size: 0.24rem;
+}
+.travalFund .share span{
+    color: #90969a;
+}
+.travalFund .share a{
+    color: #495fc2;
+}
+/*赚取旅行基金*/
+
+/*中间内容部分*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,137 @@
+
+/*中间内容部分*/
+
+
+.mainContent{
+    width:8.4rem;
+    margin:0 auto;
+    font-size: 0.2rem;
+}
+
+.currentState{
+    height: 1.00rem;
+    line-height: 1.00rem;
+    background-color: #eff5f8;
+    margin-top:0.7rem;
+    font-size: 0.22rem;
+    color:#444a69;
+    position: relative;
+    text-align: center;
+}
+.currentState>span:first-child{
+    margin-right:0.1rem;
+}
+.SuccessTriangle{
+    position: absolute;
+    left: 50%;
+    margin-left:-0.08rem;
+    border-top:0.18rem solid #eff5f8; 
+    border-left:0.16rem solid transparent; 
+    border-right:0.16rem solid transparent; 
+    border-bottom:0; 
+}
+
+.schedule{
+    padding-bottom:1.2rem;
+    margin-top:0.38rem;
+}
+.schedule>.schedulTtitle{
+    line-height: 0.84rem;
+    font-size:0.24rem;
+    font-weight: 300;
+    letter-spacing: -0.7px;
+}
+.schedule>div{
+    padding:0.4rem;
+    background-color: #f5f6f7;
+    margin-bottom:0.2rem;
+}
+.hotelInfo .productInfo{
+    margin-bottom:0.22rem;
+}
+.hotelInfo>.commodityTitle{
+    letter-spacing: 0.2px;
+    margin-bottom:0.22rem;
+}
+.hotelInfo .hotelImg{
+/*    width:1.8rem;*/
+    margin-right:0.4rem;
+}
+.hotelInfo img{
+/*    width:100%;*/
+    width:1.8rem;
+    height: 1.2rem;
+}
+.hotelInfo .hotelDetail{
+    color: #3c3f40;
+}
+.hotelDetail>div{
+    height: 0.4rem;
+    line-height: 0.4rem;
+
+}
+
+.hotelTime>div:first-child,
+.roomInfo>div:first-child{
+    width:2.4rem;
+}
+.hotelInfo .hotelDetail .detailTitle{
+    color: #a1a7aa;
+}
+.roomNum{
+    margin-left: 0.5rem;
+}
+.totalTime{
+    margin-left:0.4rem;
+}
+
+
+.hotelInfo .productInfo,
+.checkinInfo .titleInfo,
+.orderInfo .titleInfo{
+    font-size: 0.18rem;
+}
+.checkinInfo .titleInfo{
+    margin-bottom:0.3rem;
+}
+.orderInfo .titleInfo{
+    margin-bottom:0.4rem;
+}
+.checkinInfo .detailInfo{
+    margin-bottom:0.2rem;
+}
+.orderInfo .detailInfo{
+    margin-bottom:0.25rem;
+    line-height: 0.3rem;
+}
+.detailInfo>span{
+    display: inline-block;
+}
+.detailInfo>span:first-child{
+    width:2.2rem;
+    font-weight: 300;
+    color:#a1a7aa ;
+}
+
+.passengerName{
+    color: #444a69 !important;
+    font-weight: normal !important;
+}
+.disabledBtn{
+    margin-left: 0.5rem !important;
+    font-size: 0.2rem !important;
+}
+
+/*中间内容部分*/
+
+
+
+
+
+
+
+
+
+
+
+

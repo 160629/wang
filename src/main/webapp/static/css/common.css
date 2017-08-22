@@ -1,0 +1,883 @@
+
+/*
+html,
+body{
+    font-size:calc(100vw/14.4);
+}
+*/
+
+/*@media screen and (min-width:769px) and (max-width:1440px){*/
+@media screen and (min-width:993px) and (max-width:1440px){
+    html,
+    body{
+        font-size:calc(100vw/14.4);
+        font-size:-moz-calc(100vw/14.4);
+        font-size:-webkit-calc(100vw/14.4);
+        font-size:-o-calc(100vw/14.4);
+        font-size:-ms-calc(100vw/14.4);
+    }
+}
+@media screen and (min-width:1441px){
+    html,
+    body{
+        font-size:100px;
+    }
+}
+
+/*@media screen and (max-width:768px){*/
+@media screen and (max-width:992px){
+    html,
+    body{
+        font-size:60px;
+    }
+}
+
+
+*{
+    font-family:"PingFang SC","Microsoft Yahei","STXihei","Helvetica Neue","Hiragino Sans GB","Helvetica","Arial","sans-serif";
+}
+html,
+body{
+    font-family:"PingFang SC", "Microsoft Yahei","STXihei","Helvetica Neue","Hiragino Sans GB","Helvetica","Arial","sans-serif";
+    color: #3c3f40;
+    font-weight:400;
+}
+
+input{
+    font-family:"PingFang SC","Microsoft Yahei","STXihei","Helvetica Neue","Hiragino Sans GB","Helvetica","Arial","sans-serif";
+    font-size: 0.2rem;
+    font-weight:400;
+}
+a{
+    text-decoration: none;
+    color: #3c3f40;
+}
+a[role=button]{
+    display:inline-block;
+    text-align: center;
+}
+/*浮动和清除浮动*/
+.f-l {
+    float: left;
+}
+.f-r{
+    float: right;
+}
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: block;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+/*线条样式*/
+.line{
+    margin-bottom:0rem;
+    margin-top:0rem;
+    border-top:1px solid #a1a7aa;
+}
+
+
+/*公共按钮样式*/
+.defaultBtn{
+    width: 1.80rem;
+    height: 0.50rem;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border: solid 1px #82aaff;
+    font-size: 0.2rem;
+    color: #82aaff;
+    background:#F5F6F7;
+    display: inline-block;
+    line-height: 0.5rem;
+}
+
+.orderBtn{
+    width: 1rem;
+    height: 0.30rem;
+    font-size: 0.2rem;
+    font-weight:300;
+    color:#fff;
+    border:none;
+    outline: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+}
+a.orderBtn{
+    display: inline-block;
+    line-height: 0.3rem; 
+}
+input.orderBtn{
+    padding:0;
+    margin:0;
+}
+.disabledBtn{
+    background-color: #a1a7aa;
+}
+.warnBtn{
+    background-color: #f17c67;
+    color:#fff;
+}
+.checkDetailBtn{
+    background-color: #84a6fa;
+}
+input[type=button],
+input[type=submit],
+input[type=text],
+input[type=password],
+button{
+    border:none;
+    outline: none;
+/*    font-size: 0.20rem;*/
+    font-size: 0.16rem;
+}
+
+a,
+input,
+button{
+    cursor: pointer;
+}
+/*公共按钮样式*/
+
+
+
+
+/*公共颜色*/
+.paid{
+    color: #a1a7aa;
+}
+.pending{
+    color: #f17c67;
+}
+.warn{
+    color: #f17c67;
+    font-weight: normal;
+}
+.warnBj{
+    background-color:#f17c67;
+}
+.warnBorder{
+    border:1px solid #f17c67;
+}
+.lightBlue{
+    color: #82aaff;
+}
+/*公共颜色*/
+
+
+
+/*头部内容*/
+body{
+    font-size: 0.16rem;
+}
+
+/*头部*/
+.header{
+    font-size: 0.16rem;
+    height:0.8rem;  
+    width:86%;
+    margin:0 auto;
+    min-width: 768px;
+}
+.logo{
+    height:100%; 
+}
+.logo a{
+    display: block;
+    margin-top: 0.2rem;
+} 
+.logo img {
+    height: 0.40rem;
+}
+.menu{
+    height:100%;
+}
+.menu .menuUl{
+    height: 100%;
+}
+.menu .menuUl>li{
+    float: left;
+    line-height: 0.8rem;
+    padding-left: 0.25rem;
+    padding-right:0.25rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+}
+.customerService{
+}
+.menu .menuUl>li>a{
+    padding:0.1rem 0;
+}
+
+.menuUl>li:hover>a{
+    font-weight: 600;
+    border-bottom:4px solid #f1f2f4; 
+}
+.subMenu{
+    position: absolute;
+    top:1.26rem;
+    width:2rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px 0 rgba(161, 167, 170, 0.39);
+    -webkit-box-shadow: 0 0 6px 0 rgba(161, 167, 170, 0.39);
+    -moz-box-shadow: 0 0 6px 0 rgba(161, 167, 170, 0.39);
+    -o-box-shadow: 0 0 6px 0 rgba(161, 167, 170, 0.39);
+    -ms-box-shadow: 0 0 6px 0 rgba(161, 167, 170, 0.39);
+    border: solid 1px #a1a7aa;
+    display: none;
+}
+.subMenu li{
+    width:100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background:#fff;
+    z-index: 1000000;
+    text-align: center;
+    font-size:0.2rem;
+}
+.subMenu li.active{
+    background-color: #f5f6f7; 
+    font-weight: 600;
+}
+.subMenu li:hover{
+    background-color: #f5f6f7; 
+    font-weight: 600;
+}
+.triangle{
+    display: block;
+    width:0.15rem;
+    height: 0.15rem;
+    background:url("../image/index/triang.png") 0 0 no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+.triangleIcon{
+    top:-0.15rem;
+    left: 0.93rem;
+}
+.Phone{
+    text-align: center;    
+}
+.Phone p{
+    line-height: 0.34rem;
+}
+.customerService>.subMenu{
+    padding:0.26rem 0;
+}
+/*头部内容*/
+
+/*头部下面的当前位置*/
+.currentPosition{
+    width: 100%;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    background-color: #f5f6f7;
+    font-size: 0.22rem;
+    font-weight: 300;
+    letter-spacing: -0.6px;
+    color: #3c3f40;
+}
+
+.currentPosition h2{
+    width:10.4rem;
+    margin:0 auto;
+}
+.currentPosition .slash{
+    margin:0 0.1rem;
+}
+/*头部下面的当前位置*/
+
+
+/*footer*/
+.footer{
+    width:100%;
+    background-color: #f5f6f7;
+    padding-top:0.7rem;
+}
+.footerContent{
+    width:11.8rem;
+    margin:0 auto;
+}
+.business a,
+.recordNum p{
+/*    font-size:0.2rem;*/
+    font-size:0.18rem;
+    font-weight: 300;
+    color: #a1a7aa;
+    text-align: center;
+}
+.recordNum p{
+    font-size:0.16rem;
+}
+.recordNum{
+    width:100%;
+    line-height: 1rem;
+}
+.business {
+    line-height: 0.26rem;
+    width:100%;
+}
+.business>a{
+    float: left;
+    height:100%;
+    margin:0;
+    padding: 0;
+    width:33.333%;
+    display: inline-block;
+    text-align: center;
+}
+/*footer*/
+
+ 
+/*日历选择器*/
+.datePicker{
+    position: relative;
+}
+.timePickers{
+    display: none;
+    z-index: 1111;
+    position: absolute;
+    width: 7.54rem;
+/*    height: 3.9rem;*/
+/*    height: 4.2rem;*/
+    background-color: #ffffff;
+    box-shadow: 0 0 6px 0 rgba(161, 167, 170, 0.33);
+    -webkit-box-shadow: 0 0 6px 0 rgba(161, 167, 170, 0.33);
+    -moz-box-shadow: 0 0 6px 0 rgba(161, 167, 170, 0.33);
+    -ms-box-shadow: 0 0 6px 0 rgba(161, 167, 170, 0.33);
+    -o-box-shadow: 0 0 6px 0 rgba(161, 167, 170, 0.33);
+    border: solid 1px #a1a7aa;
+    top:1.06rem;
+    left: 0.4rem;
+}
+.timePickers .clear{
+    clear:both;
+}
+.timePickers .clearfix::before,
+.timePickers .clearfix::after {
+    content: '';
+    display: block;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.timeTriangle{
+    top:-0.15rem;
+    left:3.68rem;
+}
+
+.leftCalendar,
+.rightCalendar{
+    width:3.18rem;
+    height:100%;
+    cursor: pointer;
+    position: relative;
+}
+.leftCalendar .leftArrow,
+.rightCalendar .rightArrow{
+    display: block;
+    width:0.22rem;
+    height: 0.17rem;
+    position: absolute;
+    top:0.26rem;
+}
+.leftCalendar .leftArrow{
+    left:0;
+    background:url("../image/index/img_calendar_arrow_left.png") center center no-repeat;
+    background-size:contain;
+}
+.rightCalendar .rightArrow{
+    right:0;
+    background:url("../image/index/img_calendar_arrow_right.png") center center no-repeat;
+    background-size:contain;
+}
+.leftCalendar{
+    margin-left:0.3rem;
+}
+.rightCalendar{
+    margin-right:0.3rem;
+}
+
+.timePickers .currentdate{
+    font-size: 0.20rem;
+    letter-spacing: 0.1px;
+    color: #3c3f40;
+    margin-top:0.24rem;
+    text-align: center;
+}
+
+.timePickers .week{
+    height:0.52rem;
+    line-height: 0.54rem;
+    border-bottom:solid 0.5px #a1a7aa;
+    margin-bottom:0.24rem;
+}
+
+.timePickers .week ul{
+    width:3.15rem;
+    margin:0 auto;
+}
+.timePickers .week ul>li{
+    float: left;
+    width:0.45rem;
+    font-size: 0.16rem;
+    font-weight: 300;
+    text-align: center;
+    color: #a1a7aa;
+    text-align: center;
+}
+.timePickers .days ul{
+    width:3.15rem;
+    margin:0 auto;
+}
+.timePickers .days ul>li{
+    float: left;
+    width:0.45rem;
+    height: 0.3rem;
+    margin-bottom:0.2rem;
+    font-size: 0.16rem;
+    font-weight: 300;
+    text-align: center;
+    color: #3c3f40;
+}
+.timePickers .days ul>li>span{
+    display: inline-block;
+    text-align: center;
+/*    width:0.3rem;*/
+    width:0.32rem;
+/*    height:0.3rem;*/
+/*    line-height: 0.3rem;*/
+    line-height: 0.32rem;
+}
+
+.timePickers .days ul>li>span:hover{
+    background-color: #f17c67;
+    color:#fff !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+/*鼠标浮上哪个日期，就给哪个日期加一个active类名，让其背景变橘色，颜色 变白，鼠标移开后颜色背景恢复*/
+.timePickers .days li.active>span{
+    background-color: #f17c67;
+    color:#fff !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+/*今天的样式*/
+.timePickers .days li.today{
+    color: #f17c67;
+}
+
+/*入住日期和退房日期，两者之间的日期背景都是灰色*/
+.timePickers .days li.checkOutday>span,
+.timePickers .days li.checkInday>span{
+    background-color: #f17c67;
+    color:#fff !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.timePickers .days li.chosed{
+    background-color:#f5f6f7;
+}
+
+.timePickers .days li.checkInday,
+.timePickers .days li.checkOutday{
+    position: relative;
+    z-index: -4;
+}
+.timePickers .days li.checkInday::before{
+    content: "";
+    background:#fff;
+    display: block;
+    z-index: -3;
+    width:0.23rem;
+    height: 0.3rem;
+    position: absolute;
+    top:0;
+    left:0rem;
+}
+.timePickers .days li.checkOutday::before{
+    content: "";
+    background:#fff;
+    display: block;
+    z-index: -3;
+    width:0.23rem;
+    height: 0.3rem;
+    position: absolute;
+    top:0;
+    right:0rem;
+}
+/*日历选择器*/
+
+
+
+/*价格方面的公用样式*/
+.unitPrice {
+    color: #f17c67;
+}
+.unitPrice .price {
+/*    font-size: 0.28rem;*/
+    font-size: 0.22rem;
+    font-weight: 500;
+    color: #f17c67;
+}
+.unitPrice .unit {
+/*    font-size: 0.20rem;*/
+    font-size: 0.16rem;
+    font-weight: normal;
+    color: #f17c67;
+}
+.originalPrice{
+    text-decoration: line-through;
+/*    font-size: 0.2rem;*/
+    font-size: 0.16rem;
+    color: #f17c67;
+}
+.List-unitPrice .price{
+    font-size: 0.26rem;
+    font-weight: 500;
+    color: #f17c67;
+}
+.List-unitPrice .unit{
+    font-size: 0.16rem;
+    font-weight: normal;
+    color: #f17c67;
+}
+/*价格方面的公用样式*/
+
+
+
+/*商品标题  副标题*/
+.commodityTitle{
+/*    font-size: 0.28rem;*/
+    font-size: 0.22rem;
+    letter-spacing: 0.1px;
+    color: #3c3f40; 
+}
+.commoditySubTitle{
+/*    font-size: 0.2rem;*/
+    font-size: 0.16rem;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    color: #a1a7aa;
+}
+.roomAddress{
+    letter-spacing: 0.1px;
+    font-size: 0.16rem;
+    height: 0.20rem;
+    line-height: 0.20rem;
+}
+.roomAddress .businessCirle{
+    width:0.8rem;
+    text-align: center;
+    border-left: solid 2px #3c3f40;
+    border-right: solid 2px #3c3f40;
+}
+
+.proListTitle{
+    color: #3c3f40;
+    font-size: 0.26rem;
+    letter-spacing: 0.2px;
+}
+.proListSubTitle{
+    font-size:0.22rem;
+    color: #a1a7aa;
+    font-weight: 300;
+}
+.checkFont{
+    font-weight: 300;
+    color: #82aaff;
+}
+/*商品标题  副标题*/
+
+
+
+/*弹框层开始*/
+body{
+    position: relative;
+}
+.modal{ 
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    display: none;
+}
+.mask {
+    z-index:9999;
+    width:100%;
+    height: 100%;
+    background-color: #3c3f40;
+    filter: alpha(Opacity=70);
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    -webkit-opacity: 0.7;
+    -o-opacity: 0.7;
+    -ms-opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    left: 0px;  
+}
+/*注册界面开始*/
+.modalContent{
+    width:4.2rem;
+    border: solid 1px #a1a7aa;
+    background-color:#FFF;
+    position: fixed;
+    z-index:9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    cursor:pointer;
+}
+.modalContent input,
+.modalContent label{
+    cursor: pointer;
+}
+
+.modalTitle{
+    padding:0 0.18rem;
+}
+.modalTitle .titleContent{
+    line-height: 0.52rem;
+    height: 0.52rem;
+    margin-bottom:0.32rem;
+    border-bottom:solid 1px #a1a7aa; 
+    position:relative;
+}
+.titleContent p{
+    text-align: center;
+    width:100%;
+    font-size: 0.18rem;
+    font-weight: 300;
+    color: #000000;
+}
+.closeIcon{
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 0.18rem;
+    right: 0.14rem;
+    background:url("../image/login/close.png") 0 0 no-repeat;
+    background-size:cover;
+    width:0.16rem;
+    height:0.16rem;
+}
+.modalMain{
+    width:3.6rem;
+    margin:0 auto;
+}
+.modalMain .inputWrap{
+    margin-bottom:0.2rem;
+}
+.modalMain .inputWrap input{
+    
+    height: 0.48rem;
+    width: 3.2rem;
+    background-color: #f5f6f7;
+    padding: 0 0.2rem;
+    font-size: 0.18rem;
+    color: #000;
+    font-weight: 300;
+}
+.modalMain .submitWrap{
+    text-align: center;
+    margin-top:0.94rem;
+    margin-bottom:0.3rem;
+}
+.modalMain input[type=submit],
+.modalMain input[type=button]{
+    width: 100%;
+    font-weight: 300;
+    height: 0.48rem;
+    color: #fff;
+    font-size: 0.18rem;
+}
+.submitWrap .nextStep,
+.submitWrap .confirmBtn,
+.submitWrap .submit{
+    background-color: #f17c67;
+}
+
+.signInOk .modalMain{
+    text-align: center;
+}
+.modalMain .signOk{
+    font-size: 0.24rem;
+    margin-top:0.68rem;
+    margin-bottom:0.44rem;
+}
+.modalMain .emailNotice{
+    font-size: 0.18rem;
+    letter-spacing: 0.2px;
+    line-height: 0.36rem;
+    text-align: left;
+    margin-left: 0.06rem;
+}
+.modalMain .confirmSend{
+    font-size: 0.18rem;
+    color: #a1a7aa;
+    margin-top:0.12rem;
+    margin-bottom:1rem;
+    text-align: left;
+    margin-left: 0.06rem;
+}
+.confirmSend .resend{
+    color: #7096ff;
+}
+
+/*验证错误的时候显示这种样式*/
+.modalMain .wrong input{
+    color: #f17c67;
+    background-color: rgba(241, 124, 103, 0.15);
+    -webkit-background-color: rgba(241, 124, 103, 0.15);
+    -moz-background-color: rgba(241, 124, 103, 0.15);
+    -ms-background-color: rgba(241, 124, 103, 0.15);
+    -o-background-color: rgba(241, 124, 103, 0.15);
+    border: solid 4px #f17c67;
+    font-weight: normal;
+    width:3.12rem;
+}
+.firstStep,
+.secondStep,
+.signInOk{
+    display: none;
+}
+/*注册界面结束*/
+
+
+
+/*登录界面开始*/
+.loginWrap{
+    display: block;
+}
+.loginWrap .modalTitle .titleContent{
+    margin-bottom:0.22rem; 
+}  
+.facebookBtn{
+    background-color: #5b76cd;
+    -webkit-background-color:#5b76cd;
+    -moz-background-color: #5b76cd;
+    -ms-background-color: #5b76cd;
+    -o-background-color: #5b76cd;
+}
+.loginWrap .modalMain .inputWrap{
+    margin-bottom:0.16rem; 
+}
+.modalMain .faceBookLogin{
+    margin-bottom:0.08rem;
+}
+.modalMain .or{
+    margin-bottom: 0.12rem;
+    line-height: 0.28rem;
+    text-align: center;
+    font-size: 0.20rem;
+    font-weight: 300;
+}
+.modalMain .rememberMe{
+    margin-bottom:0.18rem;
+}
+.modalMain .loginBtnWrap{
+    margin-bottom:0.28rem;
+}
+.loginBtn{
+    background-color: #f17c67;
+    -webkit-background-color:#f17c67;
+    -moz-background-color: #f17c67;
+    -ms-background-color: #f17c67;
+    -o-background-color: #f17c67;
+}
+.loginWrap .line{
+    border-top:solid 1px #a1a7aa;
+    margin:0;
+}
+.noAccount {
+    
+    font-size: 0.18rem;
+    font-weight: 300;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    width: 3.6rem;
+    margin: 0 auto;
+}
+input[type=button].signinBtn{
+    width: 0.9rem;
+    height: 0.36rem;
+    border: solid 1px #5b76cd;
+    font-size: 0.18rem;
+    font-weight: 300;
+    color: #5b76cd;
+    background: #fff;
+    margin-top: 0.14rem;
+}
+.loginWrap .checkbox{
+    font-size: 0.16rem;
+    font-weight: 300;
+    color: #a1a7aa;
+    position: relative;
+    display: block;
+    height: 0.20rem;
+    line-height: 0.20rem;
+}
+.loginWrap .checkbox .checkboxIcon{
+/*
+    width: 0.16rem;
+    height: 0.16rem;
+*/
+    width: 0.20rem;
+    height: 0.18rem;
+    background: url(../image/login/btn_addtional_select.png) 0 0 no-repeat; 
+    background-size: cover;
+    display: block;
+    position: absolute;
+/*    top: 0.02rem;*/
+    top: 0.01rem;
+    left: 0rem;
+}
+.loginWrap .checkbox input[type=checkbox]{
+    margin-right:0.08rem;
+    opacity: 0;
+    filter: alpha(Opacity=0);
+    -moz-opacity: 0;
+    -webkit-opacity: 0;
+    -o-opacity: 0;
+    -ms-opacity: 0;
+}
+.loginWrap .checkbox.checked .checkboxIcon{
+/*    background: url(../image/login/btn_addtional_select.png) -0.24rem 0 no-repeat;*/
+    background: url(../image/login/btn_addtional_select.png) -0.26rem 0 no-repeat;
+    background-size:cover;
+}
+/*登录界面结束*/
+
+/*弹框层结束*/
+
+

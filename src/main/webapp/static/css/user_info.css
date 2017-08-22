@@ -1,0 +1,57 @@
+
+/*中间内容部分*/
+
+
+/*右侧内容部分开始*/
+
+.userInfoWrap>div{
+    margin-bottom:0.3rem;
+    margin-left: 2.46rem;
+}
+.userInfoWrap>div:last-child{
+    margin-bottom:2.22rem;
+}
+.userInfoWrap>div>label{
+    width:2.34rem;
+    float: left;
+    line-height: 0.5rem;
+}
+.userInfoWrap .portrait{
+    margin-top:1.04rem;
+    margin-bottom:0.6rem;
+}
+.userInfoWrap>div>input[type=text]{
+    width:2.2rem;
+    height: 0.5rem;
+    background-color: #f5f6f7;
+    border:none;
+    outline: none;
+    float: left;
+    padding:0 0.3rem;
+    color: #3c3f40;
+    font-size:0.24rem;
+}
+.userInfoWrap>div>input[type=button]{
+    width: 1.56rem;
+    height: 0.40rem;
+    border-radius: 2px;
+    background-color: #82aaff;
+    color: #5b76cd;
+    font-size: 0.24rem;
+    border: none;
+    outline: none;
+    letter-spacing: 0.2px;
+}
+/*右侧内容部分结束*/
+
+
+/*中间内容部分*/
+
+
+
+
+
+
+
+
+

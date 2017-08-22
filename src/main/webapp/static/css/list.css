@@ -1,0 +1,409 @@
+
+/*中间内容部分*/
+.linkPage{
+    display: block;
+}
+/*搜索框部分*/
+.searchContainer{
+    width:100%;
+    padding-top:0.1rem;
+    padding-bottom:0.1rem;
+    background-color: #f5f6f7;
+    margin-bottom: 0.34rem;
+}
+.searchWrap{
+    margin:0 auto;
+    width:12.38rem;
+    height:0.7rem;
+    background-color: #ffffff;
+    border: solid 1px #dfe3e6;
+    z-index: 100;
+}
+.search-condition>div{
+    height:0.7rem;
+    text-align: center; 
+    font-size: 0.2rem;
+    font-weight: 500;
+}
+.search-condition>div>input{
+    font-size: 0.2rem;
+    font-weight: 500;
+}
+.searchButton{
+    width: 2.02rem;
+    height: 0.5rem;
+    background-color: #eff5f8;
+    border: none;
+    outline: none;
+    margin:0.1rem 0.1rem 0.1rem 0rem;
+    position: relative;
+}
+
+.searchIcon{
+    display: block;
+    position: absolute;
+    background-image: url("../image/index/home_btn_search.png");
+    background-position:0 0;
+    background-repeat:no-repeat;
+    width:0.25rem;
+    height: 0.26rem;
+    top: 0.13rem;
+    left: 0.88rem;
+    background-size:cover;
+}
+/*
+.searchButton:hover{
+    background-color: #f17c67;
+}
+.searchButton:hover .searchIcon{
+    background-position:-0.34rem 0;
+    background-size:cover;
+}
+*/
+
+/*当目的地，时间，人数都选择后，给搜索按钮加一个active类名，搜索按钮变橘红色，图标变白色*/
+.searchButton.active{
+    background-color: #f17c67;
+} 
+.searchButton.active .searchIcon{
+    background-position:-0.34rem 0;
+    background-size:cover;
+}
+
+/*加减人数*/
+.CountChange{
+    width:4rem;
+}
+.CountChange>div{
+    height: 0.3rem;
+    margin-top:0.2rem;
+    margin-right:0.6rem;
+    width:1.4rem;
+}
+.CountChange>div>a{
+    display: inline-block;
+    height: 0.3rem;
+    line-height: 0.3rem;
+}
+.counts{
+    width:0.8rem;
+    height: 0.3rem;
+    text-align:center;
+    padding:0;
+    margin:0;
+}
+.countLabel{
+    line-height:0.7rem;
+    margin-left:0.8rem;
+}
+.reduceIcon,
+.addIcon{
+    background-size: cover;
+    width:0.3rem;
+    height:0.3rem;
+}
+.reduceIcon{
+    background:url("../image/index/home_calendar_reduce.png") no-repeat ;
+    background-position: 0 center;
+/*    background-position: left top;*/
+    /*兼容ie8的背景图设置*/
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../image/index/home_calendar_reduce.png", sizingMethod='scale');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+.addIcon{
+    background:url("../image/index/home_calendar_add.png") no-repeat ;
+    background-position: 0 center;
+/*    background-position: left center;*/
+    /*兼容ie8的背景图设置*/
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../image/index/home_calendar_add.png", sizingMethod='scale');
+    background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.reduceIcon:hover{
+    background:url("../image/index/home_calendar_reduce.png") no-repeat;
+    background-position: -0.38rem center;
+/*    background-position: right top;*/
+    /*兼容ie8的背景图设置*/
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../image/index/home_calendar_reduce.png", sizingMethod='scale');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+.addIcon:hover{
+    background:url("../image/index/home_calendar_add.png") no-repeat;
+    background-position: -0.38rem center;
+/*    background-position:right center;*/
+    /*兼容ie8的背景图设置*/
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../image/index/home_calendar_add.png", sizingMethod='scale');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+/*加减人数*/
+
+
+/*目的地相关的样式*/
+.destination{
+    position: relative;
+    width:2.2rem;
+}
+.destination a{
+    color: #3c3f40;
+}
+.destination .choseDest{
+    display: block;
+    line-height: 0.7rem;
+}
+.destination .target{
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top:1.06rem;
+    left:0;
+    width:1.98rem;
+    box-shadow: 0 0 6px 0 rgba(161, 167, 170, 0.39);
+    border: solid 1px #a1a7aa;
+    background: #fff;
+}
+.destination .target li{
+    line-height: 0.8rem;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+}
+.destination .target li:hover{
+    background-color: #f5f6f7;
+    font-weight: 500;
+}
+.TargetTriangle{
+    top:-0.15rem;
+    left: 0.93rem;
+}
+/*目的地相关的样式*/
+
+
+/*选择入住退房日期样式*/
+.datePicker{
+    width:4rem;
+    position: relative !important;
+}
+.pickerWrap a{
+    display: inline-block;
+    width:0.16rem;
+    border-top:2px solid #dbdedf;
+    vertical-align: middle;
+}
+.pickerWrap{
+    width:4rem;
+    height: 0.7rem;
+    border-left:1px solid #dfe2e5;
+    border-right:1px solid #dfe2e5;
+    line-height: 0.7rem;
+}
+.pickerWrap .checkinInput,
+.pickerWrap .checkoutInput{
+    height:0.3rem;
+    padding:0;
+    margin:0;
+    width:1.4rem;
+}
+.pickerWrap .checkinInput{
+    text-align:right;
+}
+.pickerWrap .checkoutInput{
+    text-align:left;
+}
+.boundary{
+    margin-left:0.4rem;
+    margin-right:0.4rem;
+}
+
+.timePickers{
+    left:0rem;
+}
+.timeTriangle{
+    top:-0.15rem;
+    left:1.98rem;
+}
+/*选择入住退房日期样式*/
+/*搜索框部分结束*/
+
+
+
+/*主题内容部分*/
+.mainContent{
+/*    width:11.6rem;*/
+    width:10.6rem;
+    margin:0 auto;
+    padding-bottom:0.8rem;
+}
+.roomlist{
+    padding-top:0.2rem;
+    padding-bottom:0.2rem;
+    padding-left:0.2rem;
+}
+.roomlist:hover{
+    box-shadow: 0 2px 6px 0 rgba(161, 167, 170, 0.42);
+}
+.roomlist:hover .priceAndCount{
+    background-color: #fff6cd;
+}
+.roomlist .roomImg {
+    position: relative;
+    width:3.8rem;
+    height: 2.6rem;
+}
+.roomlist .roomImg img{
+    width:3.8rem;
+    height: 2.6rem;
+}
+.roomlist .aboutPolicy{
+    position: absolute;
+    left:-0.20rem;
+    bottom:0rem;
+    width: 2rem;
+    height: 0.3rem;
+    border-radius: 2px;
+    background-color: #f17c67;
+    font-size: 0.18rem;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 0.3rem;
+    font-weight: 300;
+}
+.details{
+    height: 2.6rem;
+/*    margin-left: 0.3rem;*/
+/*    width:7.3rem;*/
+    font-size: 0.2rem;
+    vertical-align: bottom;
+    width:6.34rem;
+    float: right;
+    position: relative;
+}
+
+.details .proListTitle,
+.details .proListSubTitle{
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+/*    width:7.3rem;*/
+}
+.details .adress{
+/*    width:6.2rem;*/
+    width:5.2rem;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+}
+
+.details .proListTitle{
+    line-height: 0.46rem; 
+}
+.details .proListSubTitle{
+    line-height: 0.46rem;
+    margin-bottom: 0.28rem;
+}
+.details .proListTitle,
+.details .proListSubTitle{
+/*    width:7.2rem;*/
+    width:6.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.details .roomAddress{
+    margin-bottom:0.22rem;
+}
+
+.details .roomAddress span{
+    display: block;
+    float: left;
+}
+.details .roomAddress span:last-child{
+    margin-left: 0.16rem;
+}
+.details .checkFont{
+    line-height: 0.24rem;
+    font-size: 0.16rem;
+    margin-bottom:0.22rem;
+}
+.cancelFree{
+    width:0.96rem;
+    text-align: center;
+    border: solid 1px #82aaff;
+}
+.details .priceAndCount{
+    color: #f17a65;
+    height:0.5rem;
+    width:100%;
+    background-color: #f5f6f7;
+    font-size: 0.16rem;
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+.details .priceAndCount .roomOnly{
+    line-height: 0.5rem;
+    margin-left: 0.2rem;
+    color: #f17a65;
+}
+.details .hotelPrice{
+    line-height: 0.48rem;
+}
+.currentPrice{
+    margin-right:0.2rem;
+}
+
+.details .priceStatues{
+    display: inline-block;
+    width:0.34rem;
+    height:0.24rem;
+    line-height: 0.24rem;
+    border-radius:0.16rem;
+    color:#fff;
+    text-align: center;
+    margin-right:0.3rem;
+}
+.details .discount{
+    background-color: #f17c67;
+}
+.details .reducePrice{
+    background-color: #82aaff;
+}
+
+/*主题内容部分*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

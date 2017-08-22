@@ -1,0 +1,373 @@
+/*中间内容部分*/
+
+.mainContent{
+    width:10.4rem;
+    margin:0 auto;
+}
+
+
+/*左侧预定信息*/
+.bookingInfo{
+    margin-top:0.4rem; 
+    width:3.4rem;
+}
+.bookingInfo>div{
+    margin-bottom:0.1rem;
+    padding-left:0.2rem;
+    padding-right:0.20rem;
+    width:3.0rem;
+}
+.bookingTitle{
+    width:3.8rem;
+    height:0.5rem;
+    line-height: 0.5rem;
+    background-color: #fff6cd;
+    font-size:0.22rem;
+}
+.costs{
+    background-color: #f5f6f7;
+    font-size:0.2rem;
+    color: #a1a7aa;
+    padding-top:0.2rem;
+    padding-bottom:0.2rem;
+}
+.costs .businessName{
+    font-weight: 300;
+}
+.costs .businessName,
+.costs .costName{
+   margin-bottom:0.2rem; 
+    font-size:0.2rem;
+    color: #3c3f40;
+}
+.bedtype,
+.checkin-out,
+.count{
+    margin-bottom:0.14rem;
+    font-size:0.16rem;
+}
+
+.costs .unitPrice{
+    font-size:0.2rem;
+    font-weight: 500;
+    color: #f17c67;
+}
+.unitPrice{
+    text-align: right;
+}
+.totalPrice{
+    text-align: right;
+    font-size:0.2rem;
+    color: #3c3f40;
+    height:0.5rem;
+    line-height: 0.5rem;
+    background-color: #fff6cd;
+}
+.totalPrice span:nth-child(2){
+    font-size:0.22rem;
+    font-weight: 500;
+    color: #f17c67;
+}
+.bedtype span,
+.checkIn{
+    margin-right:0.18rem;
+}
+/*左侧预定信息*/
+
+
+/*右侧信息*/
+
+/*下单人信息*/
+.orderInfo{
+    width:6.8rem;
+    margin-bottom:2.06rem;
+    border: solid 1px #c3c8cb;
+    border-top:none;
+    border-bottom:none;
+    font-size:0.2rem;
+    font-weight: 300;
+    color: #4a4a4a;
+}
+.orderInfo>div{
+    border-bottom:solid 1px #c3c8cb;
+    padding-top:0.5rem;
+    padding-bottom:0.4rem;
+}
+.orderInfo>div.aboutUser{
+    padding-bottom:0.2rem;
+}
+.titleInfo{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    margin-left: 0.4rem;
+    margin-bottom:0.4rem;
+}
+.orderDetail{
+    padding-left:0.6rem;
+    padding-right:0.6rem;
+}
+.orderDetail>div{
+    margin-top:0.1rem;
+    margin-bottom:0.2rem;
+}
+
+.orderDetail .label,
+.orderDetail input.inputLarge{
+    display: block;
+}
+.orderDetail .label{
+    margin-bottom:0.2rem;
+}
+.orderDetail .inputLarge{
+    width: 2.18rem;
+    height:0.48rem;
+    border: solid 1px #eceff2;
+    outline: none;
+    padding:0 0.2rem;
+    font-size:0.20rem;
+    color: #4a4a4a;
+}
+.orderDetail input.inputLarge:focus{
+    border: solid 4px rgba(130, 170, 255, 0.46);
+    background-color: #ffffff;
+    width: 2.12rem;
+    height: 0.42rem;
+}
+.verify{
+    margin-top:0.1rem;
+    font-weight: 300 !important;
+}
+.wrong input.inputLarge{
+    width: 2.12rem;
+    height: 0.42rem;
+    border: solid 4px #f18167;
+    background-color: rgba(241, 124, 103, 0.16);
+    color: #f18167 ;
+}
+/*下单人信息*/
+
+
+/*入住信息*/
+.checkInInfo .titleInfo{
+    margin-bottom:0.3rem;
+}
+.orderDetail>div.passenger{
+    font-weight:500;
+    color: #82aaff;
+    margin-bottom:0.2rem;
+
+}
+.orderDetail>div.addPassenger{
+    margin-bottom:0;
+    margin-top:0.4rem;
+}
+.orderDetail>div.addPassenger>input[type=button]{
+    font-weight: normal;
+    width: 1.8rem;
+    height: 0.5rem;
+    border-radius:0.02rem;
+    color: #82aaff;
+    font-size: 0.2rem;
+    border: solid 1px #82aaff;
+    background-color: #ffffff;
+}
+/*入住信息*/
+
+
+/*附加服务*/
+.orderDetail.additional>div{
+    margin-bottom:0.10rem ;
+    margin-top:0rem ;
+}
+.additional>div{
+    height:0.4rem;
+    line-height: 0.4rem;
+}
+.additional>div.labelWrap{
+    height:0.3rem;
+    line-height: 0.3rem;
+}
+.additional>div>label{
+    width:1.4rem;
+    font-weight: normal;
+}
+.addtionalTitle{
+    margin-bottom:0.4rem;
+}
+.addCount{
+    color:#000;
+    font-size:0.2rem;
+}
+.addCount>input{
+    padding: 0;
+    width: 0.44rem;
+    height: 0.3rem;
+    border: 0;
+    background-color:#F5F6F7;
+    text-align: center;
+    font-size:0.14rem;
+}
+/*.addCount>button{*/
+.addCount>.reduceBtn,
+.addCount>.addBtn{
+    font-size:0.14rem;
+    width:0.3rem;
+    height:0.3rem;
+    line-height: 0.3rem;
+    background-color: #ececec;
+    border:none;
+}
+.radio{
+    position: relative;
+    margin-right:0.4rem;
+    height: 0.3rem;
+}
+.radio .radioIcon{
+    position:absolute;
+    top:0.05rem;
+    left:0rem;
+    display: block;
+    width:0.22rem;
+    height:0.20rem;
+    background:url("../image/order/btn_addtional_select.png") 0 0 no-repeat;
+    background-size:cover;
+}
+.radio input[type=radio]{
+    opacity: 0;
+    margin-right:0.2rem;
+
+}
+.radio.checked .radioIcon{
+    background:url("../image/order/btn_addtional_select.png") -0.29rem 0 no-repeat;
+    background-size:cover;
+}
+.notice{
+    font-weight: 300;
+    color: #82aaff;
+    text-align: right;
+    margin-right:0.4rem;
+    margin-top:0.1rem ;
+    margin-bottom:0.1rem ;
+}
+
+.unsuitable{
+    font-size:0.16rem;
+    font-weight: 300;
+    color: #ff3800;
+    line-height: 0.28rem;
+    margin-bottom:0rem !important;
+}
+/*附加服务*/
+
+
+/*支付订单信息*/
+.payOrder
+.couponCode {
+
+}
+.couponCode label{
+    line-height: 0.5rem;
+    margin-right:0.1rem;
+}
+.couponCode label,
+.payMethod label{
+    display: block;
+    font-size:0.20rem;
+    font-weight: 300;
+    color: #434646;
+}
+.payMethod .methods label{
+    margin-bottom:0.2rem;
+}
+.payMethod>label{
+    margin-top:0.1rem;
+    margin-bottom:0.4rem;
+}
+.couponCode input{
+    width: 4.16rem;
+    height: 0.5rem;
+    border-radius:0.08rem;
+    background-color: #f5f6f7;
+    border:none;
+    outline: none;
+    padding:0;
+    margin:0;
+    padding:0 0.2rem;
+}
+.Radio{
+    font-size:0.2rem;
+    color: #434646;
+    height: 0.30rem;
+    line-height: 0.30rem;
+    position: relative;
+    display: block;
+    width:2.8rem;
+}
+.Radio .RadioIcon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+/*    width:0.30rem;*/
+    width:0.32rem;
+    height:0.30rem;
+    background:url("../image/order/btn_payment_select.png") 0 0 no-repeat;
+    background-size:cover;
+}
+.Radio.checked .RadioIcon{
+    background:url("../image/order/btn_payment_select.png") -0.39rem 0 no-repeat;
+    background-size:cover;
+}
+.Radio input[type=radio]{
+    opacity: 0;
+    margin-right:0.2rem;
+}
+.payNow{
+    text-align: center;
+    margin-bottom:0.1rem !important;
+}
+.payNow .payBtn {
+    width: 4rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    background-color: #f17c67;
+    font-size: 0.2rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+.orderDetail.payOrder>div{
+    margin-bottom:0.3rem;
+}
+.payTitle{
+    margin-bottom:0.3rem;
+}
+/*支付订单信息*/
+
+/*右侧信息结束*/
+
+
+/*中间内容部分*/
+
+@media screen and (max-width:1040px){
+    .radio input[type=radio]{
+        margin-right:0.1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

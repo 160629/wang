@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+    <!-- 自动扫描组件 action所对应的java控制类所在包名 -->
+    <context:component-scan base-package="cq.yezi.controller"/>
+    <context:component-scan base-package="cq.yezi.common"/>
+
+    <!-- 设置默认配置方案 -->
+    <mvc:annotation-driven/>
+    <!-- 使用默认的Servlet来响应静态文件 -->
+    <mvc:default-servlet-handler/>
+
+    <!-- 打开注解驱动 -->
+    <mvc:annotation-driven conversion-service="conversionService">
+        <mvc:message-converters register-defaults="true">
+            <ref bean="jacksonMessageConverter"/>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <!-- enum转换器 -->
+    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <!-- 自动将枚举类型的序列号解析称枚举类型 -->
+                <bean class="cq.common.enumhelper.OrdinalToEnumConverterFactory"/>
+            </set>
+        </property>
+    </bean>
+
+    <!-- json转换器 -->
+    <bean id="jacksonMessageConverter"
+          class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>application/json;charset=UTF-8</value>
+            </list>
+        </property>
+        <property name="objectMapper">
+            <bean class="cq.common.jsonhelper.JsonMapper"></bean>
+        </property>
+    </bean>
+
+    <!-- 配置jsp视图解析器 ，需要有jstl这个jar包，否则不能映射 -->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <!-- 处理请求后转向文件所在位置 -->
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <!-- 文件的后缀也可为ASP html等 -->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- 自定义config配置文件注入 -->
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+        <property name="locations">
+            <list>
+                <value>classpath:config.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- js/css版本号 -->
+    <bean id="resourceConfig" class="cq.yezi.common.ResourcePathExposer" init-method="init"/>
+
+</beans>
